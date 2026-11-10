@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Email</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background-image: url("1498c1746a2edfb2d7adebe7d5dba3b4 (1).jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+        }
+
+        /* BACK BUTTON */
+        .gobackbtn {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            padding: 12px 18px;
+
+            background: rgba(41, 15, 91, 0.85);
+            border: 2px solid white;
+            border-radius: 12px;
+
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            transition: 0.3s ease;
+        }
+
+        .gobackbtn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+        }
+
+        .gobackbtn a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        
+        .MAINCONTANTCTS {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            gap: 30px;
+        }
+
+        
+        .email {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+
+            width: 320px;
+            padding: 30px 20px;
+
+            background: rgba(255, 255, 255, 0.10);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            border-radius: 18px;
+
+            box-shadow:
+                0 10px 20px rgba(0, 0, 0, 0.15),
+                0 25px 45px rgba(0, 0, 0, 0.35);
+
+            transition: transform 0.4s ease,
+                        box-shadow 0.4s ease;
+
+            animation: appear 0.8s ease;
+            
+        }
+
+        .email:hover {
+            transform: translateY(-12px);
+
+            box-shadow:
+                0 15px 25px rgba(0, 0, 0, 0.2),
+                0 35px 55px rgba(0, 0, 0, 0.45);
+        }
+
+        .email h1 {
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .email a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+
+            padding: 12px 18px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 8px;
+
+            background: rgba(255, 255, 255, 0.12);
+            transition: 0.3s ease;
+        }
+
+        .email a:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: scale(1.05);
+            color: #b9eaff;
+        }
+
+        
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .email {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="gobackbtn">
+        <a href="main.html">BACK</a>
+    </div>
+
+    <div class="MAINCONTANTCTS">
+
+        <div class="email">
+
+            <h1>Email</h1>
+
+            <a href="mailto:shubhsrivastav850@gmail.com">
+                CONTACT VIA EMAIL
+            </a>
+
+        </div>
+        <div class="email">
+          <h1>discord</h1>
+
+          <a href="#">CONTACT VIA DISCORD</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
